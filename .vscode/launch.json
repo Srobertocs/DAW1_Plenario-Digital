@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-PlenariodigitalApplication<plenariodigital>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.plenariodigital.plenariodigital.PlenariodigitalApplication",
+      "projectName": "plenariodigital",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
