@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Plenário Digital</title>
+
+  <!-- Estilo do Projeto -->
+  <link rel="stylesheet" type="text/css" href="../../static/css/output.css" th:href=" @{/css/output.css}">
+</head>
+
+<body>
+  <!-- Conteúdo Principal -->
+  <main layout:fragment="conteudo"></main>
+</body>
+
+</html>
