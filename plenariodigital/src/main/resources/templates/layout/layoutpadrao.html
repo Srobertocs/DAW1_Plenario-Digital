@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://thymeleaf.org">
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
 <head>
   <meta charset="UTF-8">
@@ -7,10 +7,13 @@
   <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Plenário Digital</title>
 
   <!-- Estilo do Projeto -->
-  <link rel="stylesheet" type="text/css" href="../../static/css/output.css" th:href=" @{/css/output.css}">
+  <link rel="stylesheet" type="text/css" href="../../static/css/output.css" th:href="@{/css/output.css}">
 </head>
 
 <body>
+  <!-- Header -->
+  <header th:replace="~{layout/fragments/header.html :: header}"></header>
+
   <!-- Conteúdo Principal -->
   <main layout:fragment="conteudo"></main>
 </body>
