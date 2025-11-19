@@ -1,5 +1,26 @@
-<header th:fragment="header" xmlns:th="http://www.thymeleaf.org">
-  <div>
-    <img th:src="@{/image/logo_camaralegislativa.png}" alt="Logo da camara municipal de uberaba" class="h-auto w-24" />
+<header th:fragment="header" xmlns:th="http://www.thymeleaf.org" class="bg-[#EAEAEA]">
+  <div class="container mx-auto p-4 box-border flex items-center justify-between">
+    <!-- Imagem logo do header -->
+    <a th:href="@{/}">
+      <img th:src="@{/image/logo_camaralegislativa.png}" alt="Logo da camara municipal de uberaba" class="h-auto w-24" />
+    </a>
+
+    <!-- Usuario e Botões de logar e sair -->
+    <div class="flex gap-8 items-center">
+
+      <svg class="h-auto w-10 hover:fill-[#6E1E36]" version="1.0" xmlns="http://www.w3.org/2000/svg" width="90.000000pt" height="90.000000pt" viewBox="0 0 90.000000 90.000000" preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(0.000000,90.000000) scale(0.100000,-0.100000)" stroke="none">
+          <path d="M203 759 c-110 -54 -109 -235 1 -288 53 -26 79 -26 132 0 111 53 111 235 0 288 -53 26 -80 26 -133 0z" />
+          <path d="M563 759 c-110 -54 -109 -235 1 -288 53 -26 79 -26 132 0 111 53 111 235 0 288 -53 26 -80 26 -133 0z m128 -68 c24 -24 29 -38 29 -76 0 -38 -5 -52
+          -29 -76 -20 -20 -39 -29 -61 -29 -22 0 -41 9 -61 29 -24 24 -29 38 -29 76 0
+          38 5 52 29 76 40 39 82 39 122 0z" />
+          <path d="M163 369 c-72 -23 -144 -74 -157 -111 -7 -20 -5 -33 8 -52 l16 -26 420 0 420 0 16 26 c24 35 10 70 -44 111 -49 37 -155 73 -216 73 -22 0 -71 -11 -108 -24 l-68 -23 -67 23 c-82 28 -138 29 -220 3z m594 -69 c28 -12 59 -30 69 -41 17 -19 14 -19 -132 -19 l-149 0 -18 31 c-10 18 -16 33 -15 34 2 2 19 8 38 14 52 15 148 7 207 -19z" />
+        </g>
+      </svg>
+
+      <a href="" class="font-['Stack_Sans_Headline',sans-serif] cursor-pointer hover:border-b-2 ">Entrar</a>
+      <a href="" class="font-['Stack_Sans_Headline',sans-serif] cursor-pointer hover:border-b-2">Sair</a>
+    </div>
+
   </div>
 </header>
