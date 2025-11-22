@@ -9,7 +9,25 @@
 
 <body>
   <main layout:fragment="conteudo" id="main">
-   
+    <!-- Introdução -->
+    <section class="bg-[#EAEAEA]">
+      <div class="container mx-auto py-22.5 px-4 grid grid-cols-[1.5fr_2fr] gap-5 ">
+        <div class="font-['Poppins',sans-serif]">
+          <h1 class="text-6xl font-semibold text-[#1C1C1C]">Portal Câmara: Transparência em Uberaba</h1>
+
+          <p class="pt-5 text-[#666666]">A maneira mais rápida e clara de acompanhar a votação e o resultado de todos os Projetos de Lei (PLs) dos vereadores de Uberaba. Acesse o Portal Oficial e confira!</p>
+        </div>
+
+        <div>
+          <img th:src="@{/image/imagem_camaralegislativa.png}" alt="Imagem principal da página home" class="rounded-xl w-full h-80 object-cover" />
+        </div>
+      </div>
+      <!-- Linha divisória -->
+      <span class=" block w-100% h-1.25 bg-[#6E1E36]"></span>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <section th:replace="~{layout/fragments/conteudo_principal.html :: conteudo_principal}"></section>
   </main>
 </body>
 

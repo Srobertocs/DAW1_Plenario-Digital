@@ -5395,3 +5395,708 @@ org.springframework.expression.spel.SpelParseException: Expression [/image/logo_
 2025-11-18T22:31:34.599-03:00  INFO
       13944 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
       c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-11-18T22:33:14.337-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 8504 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-18T22:33:14.344-03:00 DEBUG
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-18T22:33:14.348-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-18T22:33:14.807-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-18T22:33:14.807-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-18T22:33:16.702-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18T22:33:16.745-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces.
+2025-11-18T22:33:17.887-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-18T22:33:17.934-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-18T22:33:17.934-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-18T22:33:18.044-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-18T22:33:18.044-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3236 ms
+2025-11-18T22:33:18.811-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-18T22:33:19.272-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@31381c2c
+2025-11-18T22:33:19.274-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-18T22:33:19.332-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-18T22:33:19.358-03:00  WARN
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-18T22:33:19.449-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.064s)
+2025-11-18T22:33:19.504-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-18T22:33:19.508-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-18T22:33:20.377-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18T22:33:22.052-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18T22:33:22.243-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-18T22:33:23.392-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-18T22:33:23.405-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-18T22:33:23.556-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-18T22:33:23.584-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 9.961 seconds (process running for 11.454)
+2025-11-18T22:33:25.369-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-18T22:33:25.369-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-18T22:33:25.371-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2025-11-18T22:39:42.970-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-18T22:39:42.984-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-18T22:39:43.025-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18T22:39:43.042-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-11-18T22:39:43.056-03:00  INFO
+      8504 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-11-19T12:30:40.422-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 8728 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-19T12:30:40.438-03:00 DEBUG
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-19T12:30:40.441-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T12:30:40.894-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-19T12:30:40.894-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-19T12:30:42.913-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T12:30:42.960-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
+2025-11-19T12:30:43.975-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-19T12:30:44.013-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-19T12:30:44.014-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T12:30:44.189-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-19T12:30:44.190-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3291 ms
+2025-11-19T12:30:44.911-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-19T12:30:45.741-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ddfb12e
+2025-11-19T12:30:45.743-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-19T12:30:45.810-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-19T12:30:45.889-03:00  WARN
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-19T12:30:45.995-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.077s)
+2025-11-19T12:30:46.023-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-19T12:30:46.028-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-19T12:30:46.943-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T12:30:48.822-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T12:30:48.945-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-19T12:30:49.903-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-19T12:30:49.914-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T12:30:50.059-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T12:30:50.083-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 10.344 seconds (process running for 12.295)
+2025-11-19T12:30:51.043-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T12:30:51.043-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-19T12:30:51.044-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-11-19T12:33:10.718-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T12:33:10.726-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-19T12:33:10.740-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T12:33:10.749-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-11-19T12:33:10.768-03:00  INFO
+      8728 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-11-19T12:39:54.665-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 16764 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-19T12:39:54.683-03:00 DEBUG
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-19T12:39:54.685-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T12:39:55.711-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-19T12:39:55.711-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-19T12:39:59.944-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T12:40:00.079-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 0 JPA repository interfaces.
+2025-11-19T12:40:03.166-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-19T12:40:03.269-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-19T12:40:03.269-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T12:40:03.691-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-19T12:40:03.696-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7979 ms
+2025-11-19T12:40:05.381-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-19T12:40:06.315-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3beb99b2
+2025-11-19T12:40:06.316-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-19T12:40:06.459-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-19T12:40:06.518-03:00  WARN
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-19T12:40:06.683-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.112s)
+2025-11-19T12:40:06.732-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-19T12:40:06.742-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-19T12:40:08.861-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T12:40:12.993-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T12:40:13.318-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-19T12:40:16.037-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-19T12:40:16.058-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T12:40:16.527-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T12:40:16.627-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 24.05 seconds (process running for 26.674)
+2025-11-19T12:40:17.146-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T12:40:17.148-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-19T12:40:17.153-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 5 ms
+2025-11-19T12:45:06.540-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T12:45:06.549-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-19T12:45:06.566-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T12:45:06.573-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-11-19T12:45:06.578-03:00  INFO
+      16764 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-11-19T21:03:37.423-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 16316 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-19T21:03:37.434-03:00 DEBUG
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-19T21:03:37.436-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-19T21:03:37.846-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-19T21:03:37.846-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-19T21:03:40.010-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19T21:03:40.055-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 0 JPA repository interfaces.
+2025-11-19T21:03:40.955-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-19T21:03:40.993-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-19T21:03:40.993-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-19T21:03:41.126-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-19T21:03:41.127-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3280 ms
+2025-11-19T21:03:41.807-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-19T21:03:42.532-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2db9cf16
+2025-11-19T21:03:42.534-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-19T21:03:42.635-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-19T21:03:42.701-03:00  WARN
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-19T21:03:42.790-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.061s)
+2025-11-19T21:03:42.820-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-19T21:03:42.825-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-19T21:03:43.859-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19T21:03:45.486-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T21:03:45.616-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-19T21:03:46.628-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-19T21:03:46.639-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-19T21:03:46.786-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-19T21:03:46.806-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 10.043 seconds (process running for 11.962)
+2025-11-19T21:03:48.275-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-19T21:03:48.275-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-19T21:03:48.277-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2025-11-19T22:28:06.396-03:00  WARN
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [HikariPool-1:housekeeper]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m21s321ms368µs300ns).
+2025-11-19T22:34:19.032-03:00  WARN
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [HikariPool-1:housekeeper]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m32s291ms474µs500ns).
+2025-11-19T22:36:20.570-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-19T22:36:20.645-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-19T22:36:20.920-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19T22:36:21.042-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-11-19T22:36:21.091-03:00  INFO
+      16316 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-11-20T12:38:31.700-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 15220 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-20T12:38:31.716-03:00 DEBUG
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-20T12:38:31.718-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-20T12:38:32.365-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-20T12:38:32.365-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-20T12:38:35.127-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-20T12:38:35.175-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
+2025-11-20T12:38:36.845-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-20T12:38:36.899-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-20T12:38:36.899-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-20T12:38:37.154-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-20T12:38:37.159-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4789 ms
+2025-11-20T12:38:38.158-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-20T12:38:38.687-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@689bb2c4
+2025-11-20T12:38:38.690-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-20T12:38:38.747-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-20T12:38:38.792-03:00  WARN
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-20T12:38:38.895-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.077s)
+2025-11-20T12:38:38.957-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-20T12:38:38.965-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-20T12:38:39.988-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-20T12:38:41.854-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-20T12:38:42.014-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-20T12:38:43.275-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-20T12:38:43.292-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-20T12:38:43.497-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-20T12:38:43.527-03:00  INFO
+      15220 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 12.696 seconds (process running for 15.893)
+2025-11-20T12:40:14.880-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 11488 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-20T12:40:14.889-03:00 DEBUG
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-20T12:40:14.889-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-20T12:40:15.353-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-20T12:40:15.353-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-20T12:40:17.223-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-20T12:40:17.283-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 0 JPA repository interfaces.
+2025-11-20T12:40:18.149-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-20T12:40:18.182-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-20T12:40:18.182-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-20T12:40:18.285-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-20T12:40:18.286-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2930 ms
+2025-11-20T12:40:19.069-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-20T12:40:19.457-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6e5c93b5
+2025-11-20T12:40:19.460-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-20T12:40:19.512-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-20T12:40:19.532-03:00  WARN
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-20T12:40:19.625-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.061s)
+2025-11-20T12:40:19.729-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-20T12:40:19.737-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-20T12:40:20.629-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-20T12:40:22.262-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-20T12:40:22.402-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-20T12:40:23.605-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-20T12:40:23.631-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-20T12:40:23.790-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-20T12:40:23.815-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 9.538 seconds (process running for 11.344)
+2025-11-20T12:40:25.928-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-20T12:40:25.928-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-20T12:40:25.930-03:00  INFO
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2025-11-20T13:33:21.836-03:00  WARN
+      11488 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [HikariPool-1:housekeeper]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m2s147ms540µs700ns).
+2025-11-21T21:01:06.149-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 5772 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-21T21:01:06.166-03:00 DEBUG
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-21T21:01:06.166-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-21T21:01:06.603-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-21T21:01:06.603-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-21T21:01:08.485-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-21T21:01:08.530-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
+2025-11-21T21:01:09.351-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-21T21:01:09.381-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-21T21:01:09.381-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-21T21:01:09.472-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-21T21:01:09.472-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2869 ms
+2025-11-21T21:01:10.139-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-21T21:01:10.998-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@474a8e09
+2025-11-21T21:01:10.999-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-21T21:01:11.065-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-21T21:01:11.129-03:00  WARN
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-21T21:01:11.234-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.071s)
+2025-11-21T21:01:11.268-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-21T21:01:11.279-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-21T21:01:12.396-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-21T21:01:14.200-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21T21:01:14.326-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-21T21:01:15.537-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-21T21:01:15.551-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-21T21:01:15.728-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-21T21:01:15.761-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 10.31 seconds (process running for 12.204)
+2025-11-21T21:01:16.943-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-21T21:01:16.943-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-21T21:01:16.945-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2025-11-21T22:38:56.643-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-21T22:38:56.664-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-21T22:38:56.714-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-21T22:38:56.738-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-11-21T22:38:56.768-03:00  INFO
+      5772 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [SpringApplicationShutdownHook]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
