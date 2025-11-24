@@ -11,12 +11,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Stack+Sans+Headline:wght@200..700&display=swap" rel="stylesheet">
+
+  <!-- Biblioteca htmx -->
+  <script defer src="../../static/js/vendors/htmx/htmx.min.js" th:src="@{/js/vendors/htmx/htmx.min.js}"></script>
+  <script defer src="../../static/js/vendors/htmx/htmx-ext-response-targets.min.js" th:src="@{/js/vendors/htmx/htmx-ext-response-targets.min.js}"></script>
+  <meta name="htmx-config" content='{"defaultSwapStyle":"outerHTML"}'>
 </head>
 
 <body>
   <!-- Header -->
   <header th:replace="~{layout/fragments/header.html :: header}"></header>
-  <!-- Conteúdo Principal -->
+
+  <span class=" block w-100% h-1.25 bg-[#6E1E36]"></span>
+
   <main>
     <th:block layout:fragment="conteudo"></th:block>
   </main>

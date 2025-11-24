@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <!-- Conteúdo Principal -->
   <main layout:fragment="conteudo" id="main">
     <!-- Introdução -->
     <section class="bg-[#EAEAEA]">
@@ -22,12 +23,10 @@
           <img th:src="@{/image/imagem_camaralegislativa.png}" alt="Imagem principal da página home" class="rounded-xl w-full h-80 object-cover" />
         </div>
       </div>
-      <!-- Linha divisória -->
-      <span class=" block w-100% h-1.25 bg-[#6E1E36]"></span>
     </section>
 
     <!-- Conteúdo Principal -->
-    <section th:replace="~{layout/fragments/conteudo_principal.html :: conteudo_principal}"></section>
+    <section th:replace="~{layout/fragments/conteudo_administrador.html :: conteudo_administrador}"></section>
   </main>
 </body>
 

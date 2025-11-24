@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" layout:decorate="~{layout/layoutpadrao}" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Partido</title>
+</head>
+
+<body>
+  <!-- Conteúdo Principal do cadastro de partidos -->
+  <main layout:fragment="conteudo" id="main">
+
+    <section>
+      <h1>Cadastrar partido</h1>
+
+      <form th:hx-post="@{/partido/cadastro_partido.html}" th:object="${partido}">
+        <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Nome', 'nome')}"></div>
+        <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Sigla', 'sigla')}"></div>
+        <div>
+          <button type="submit "> Cadastrar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
