@@ -9,12 +9,11 @@
 
 <body>
   <!-- Conteúdo Principal do cadastro de partidos -->
-  <main layout:fragment="conteudo" id="main">
-
-    <section>
+  <main layout:fragment="conteudo" th:fragment="formulario" id="main">
+    <section class="container mx-auto px-4">
       <h1>Cadastrar partido</h1>
 
-      <form th:hx-post="@{/partido/cadastro_partido.html}" th:object="${partido}">
+      <form th:hx-post="@{/partido/cadastro_partido}" th:object="${partido}">
         <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Nome', 'nome')}"></div>
         <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Sigla', 'sigla')}"></div>
         <div>

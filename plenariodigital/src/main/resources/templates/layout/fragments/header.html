@@ -1,4 +1,4 @@
-<header th:fragment="header" xmlns:th="http://www.thymeleaf.org" class="bg-[#EAEAEA]">
+<header th:fragment="header" xmlns:th="http://www.thymeleaf.org" class="bg-[#EAEAEA] sticky top-0 z-50 shadow-md">
   <section class="container mx-auto py-7.5 px-4 box-border flex items-center justify-between">
     <!-- Imagem logo do header -->
     <a th:href="@{/}">
@@ -15,8 +15,8 @@
           <path d="M163 369 c-72 -23 -144 -74 -157 -111 -7 -20 -5 -33 8 -52 l16 -26 420 0 420 0 16 26 c24 35 10 70 -44 111 -49 37 -155 73 -216 73 -22 0 -71 -11 -108 -24 l-68 -23 -67 23 c-82 28 -138 29 -220 3z m594 -69 c28 -12 59 -30 69 -41 17 -19 14 -19 -132 -19 l-149 0 -18 31 c-10 18 -16 33 -15 34 2 2 19 8 38 14 52 15 148 7 207 -19z" />
         </g>
       </svg>
-      <a href="" class="font-['Stack_Sans_Headline',sans-serif] cursor-pointer hover:text-[#6E1E36] ">Entrar</a>
-      <a href="" class="font-['Stack_Sans_Headline',sans-serif] cursor-pointer hover:text-[#6E1E36]">Sair</a>
+      <a th:href="@{/}" class="font-['Stack_Sans_Headline',sans-serif] cursor-pointer hover:text-[#6E1E36] ">Entrar</a>
+      <a th:href="@{/}" class="font-['Stack_Sans_Headline',sans-serif] cursor-pointer hover:text-[#6E1E36]">Sair</a>
     </div>
   </section>
 </header>

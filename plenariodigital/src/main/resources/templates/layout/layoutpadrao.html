@@ -18,15 +18,17 @@
   <meta name="htmx-config" content='{"defaultSwapStyle":"outerHTML"}'>
 </head>
 
-<body>
-  <!-- Header -->
-  <header th:replace="~{layout/fragments/header.html :: header}"></header>
+<body hx-ext="response-targets" hx-target="#main" hx-target-5*="#main" hx-target-4*="#main">
 
-  <span class=" block w-100% h-1.25 bg-[#6E1E36]"></span>
+  <section>
+    <!-- Header -->
+    <header th:replace="~{layout/fragments/header.html :: header}"></header>
 
-  <main>
-    <th:block layout:fragment="conteudo"></th:block>
-  </main>
+    <main>
+      <th:block layout:fragment="conteudo"></th:block>
+    </main>
+
+  </section>
 </body>
 
 </html>
