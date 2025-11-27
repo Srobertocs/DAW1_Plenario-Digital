@@ -17744,3 +17744,837 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
 2025-11-26T18:50:53.346-03:00  WARN
       16112 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
       .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-11-26T21:46:46.971-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 2272 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-26T21:46:46.984-03:00 DEBUG
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-26T21:46:46.984-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T21:46:47.284-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-11-26T21:46:47.284-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-11-26T21:46:49.274-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T21:46:49.380-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interface.
+2025-11-26T21:46:50.348-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-26T21:46:50.384-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-26T21:46:50.386-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26T21:46:50.485-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-26T21:46:50.485-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3201 ms
+2025-11-26T21:46:51.298-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2025-11-26T21:46:51.632-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2989708e
+2025-11-26T21:46:51.635-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2025-11-26T21:46:51.676-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-26T21:46:51.699-03:00  WARN
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-26T21:46:51.778-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.055s)
+2025-11-26T21:46:51.837-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-26T21:46:51.840-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-26T21:46:52.561-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T21:46:54.220-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T21:46:54.954-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-26T21:46:56.135-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-26T21:46:56.145-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T21:46:56.260-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-26T21:46:56.278-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 9.73 seconds (process running for 12.202)
+2025-11-26T21:46:57.718-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26T21:46:57.719-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-26T21:46:57.720-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [RMI TCP Connection(2)-127.0.0.1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2025-11-26T21:53:13.493-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [File Watcher]
+      rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-26T21:53:13.549-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-5]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-26T21:53:13.577-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-26T21:53:13.640-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-5]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T21:53:13.669-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-5]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2025-11-26T21:53:13.679-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-5]
+      c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2025-11-26T21:53:14.187-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 2272 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-26T21:53:14.189-03:00 DEBUG
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-26T21:53:14.189-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T21:53:14.768-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T21:53:14.788-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-11-26T21:53:14.985-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-26T21:53:14.989-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-26T21:53:14.990-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26T21:53:15.053-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-26T21:53:15.054-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 854 ms
+2025-11-26T21:53:15.193-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-2 - Starting...
+2025-11-26T21:53:15.391-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1162efbc
+2025-11-26T21:53:15.391-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-2 - Start completed.
+2025-11-26T21:53:15.394-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-26T21:53:15.417-03:00  WARN
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-26T21:53:15.440-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.016s)
+2025-11-26T21:53:15.595-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-26T21:53:15.595-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-26T21:53:15.654-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T21:53:15.888-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T21:53:16.078-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-26T21:53:16.288-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-26T21:53:16.292-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T21:53:16.327-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-26T21:53:16.355-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 2.377 seconds (process running for 392.279)
+2025-11-26T21:53:16.360-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-26T21:53:24.941-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [File Watcher]
+      rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-26T21:53:24.943-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-7]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-26T21:53:24.953-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-26T21:53:24.956-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-7]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T21:53:24.957-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-7]
+      c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown initiated...
+2025-11-26T21:53:24.958-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-7]
+      c.z.h.HikariDataSource                   : HikariPool-2 - Shutdown completed.
+2025-11-26T21:53:25.088-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 2272 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-26T21:53:25.089-03:00 DEBUG
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-26T21:53:25.090-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T21:53:25.376-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T21:53:25.388-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-11-26T21:53:25.472-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-26T21:53:25.474-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-26T21:53:25.474-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26T21:53:25.520-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-26T21:53:25.520-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 427 ms
+2025-11-26T21:53:25.585-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-3 - Starting...
+2025-11-26T21:53:25.642-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@6ab6d2b1
+2025-11-26T21:53:25.642-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-3 - Start completed.
+2025-11-26T21:53:25.643-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-26T21:53:25.647-03:00  WARN
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-26T21:53:25.657-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.006s)
+2025-11-26T21:53:25.741-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-26T21:53:25.741-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-26T21:53:25.766-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T21:53:25.892-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T21:53:25.979-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-26T21:53:26.084-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-26T21:53:26.087-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T21:53:26.114-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-26T21:53:26.121-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 1.093 seconds (process running for 402.045)
+2025-11-26T21:53:26.123-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-11-26T21:53:28.257-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-26T21:53:28.257-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2025-11-26T21:53:28.260-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2025-11-26T21:53:28.292-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:28.292-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:28.292-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T21:53:28.294-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:31.686-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-3]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:31.686-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-3]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:31.686-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-3]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:31.687-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-3]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T21:53:36.954-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:36.954-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:36.955-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:38.407-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:38.407-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:38.407-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:43.069-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:43.069-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:43.069-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:43.069-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T21:53:45.845-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:45.845-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:45.845-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:45.845-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T21:53:48.551-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:48.551-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:48.551-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T21:53:48.552-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:53:56.713-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:53:56.713-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:53:56.713-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:54:01.081-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:54:01.082-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:54:01.082-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:54:02.031-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:54:02.031-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:54:02.031-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:59:50.077-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T21:59:50.077-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T21:59:50.077-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T21:59:50.077-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:00:07.247-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:00:07.247-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:00:07.247-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:00:07.247-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:00:08.718-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:00:08.718-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:00:08.718-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:00:08.718-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:00:13.647-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:00:13.647-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:00:13.647-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:00:13.647-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:00:51.434-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:00:51.434-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:00:51.434-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:00:51.434-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:01:34.138-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:01:34.138-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:01:34.139-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:01:34.139-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:01:35.250-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:01:35.251-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:01:35.251-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:01:35.251-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:01:39.762-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:01:39.762-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:01:39.762-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:01:39.763-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:02:04.770-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:02:04.771-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:02:04.771-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:02:04.771-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:02:22.712-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:02:22.714-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:02:22.714-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:02:22.714-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-1]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:02:47.993-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:02:47.993-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:02:47.993-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:02:47.995-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:03:39.057-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:03:39.057-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:03:39.058-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:03:39.058-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:03:40.204-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:03:40.204-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:03:40.204-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:03:40.204-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:03:44.144-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:03:44.144-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:03:44.144-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:03:44.144-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:04:00.704-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:04:00.704-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:04:00.704-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:04:00.704-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:04:41.423-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:04:41.423-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:04:41.423-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:04:41.423-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-8]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:04:59.862-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:04:59.863-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:04:59.863-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:04:59.863-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:08:40.955-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:08:40.956-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:08:40.956-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:08:40.956-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:09:46.166-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:09:46.167-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:09:46.167-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:09:46.167-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:14:55.226-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:14:55.226-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:14:55.226-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:14:55.227-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-10]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:15:07.975-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:15:07.975-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:15:07.975-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:15:10.343-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:15:10.343-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:15:10.343-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-5]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:15:57.213-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:15:57.213-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:15:57.213-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:15:57.217-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:15:59.265-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:15:59.265-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:15:59.265-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:15:59.265-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-9]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:16:16.796-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:16:16.796-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:16:16.796-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:16:16.797-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:18:26.513-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:18:26.513-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:18:26.513-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:18:26.514-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-7]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:18:28.522-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:18:28.522-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:18:28.522-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:18:28.522-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-4]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:19:01.953-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:19:01.953-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:19:01.953-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:19:01.954-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-6]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:19:16.919-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : O partido é inválido para cadastro
+2025-11-26T22:19:16.919-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erros encontrados:
+2025-11-26T22:19:16.919-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'nome': rejected value []; codes [NotBlank.partido.nome,NotBlank.nome,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.nome,nome]; arguments []; default message [nome]]; default message [O nome do partido é obrigatório]
+2025-11-26T22:19:16.920-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [http-nio-8080-exec-2]
+      c.p.c.PartidoController                  : Erro de campo: Field error in object 'partido' on field 'sigla': rejected value []; codes [NotBlank.partido.sigla,NotBlank.sigla,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [partido.sigla,sigla]; arguments []; default message [sigla]]; default message [O sigla do partido é obrigatório]
+2025-11-26T22:20:03.706-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [File Watcher]
+      rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-11-26T22:20:03.769-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-11]
+      o.s.b.w.e.t.GracefulShutdown             : Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-26T22:20:03.777-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [tomcat-shutdown]
+      o.s.b.w.e.t.GracefulShutdown             : Graceful shutdown complete
+2025-11-26T22:20:03.827-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-11]
+      j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T22:20:03.852-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-11]
+      c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown initiated...
+2025-11-26T22:20:03.864-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [Thread-11]
+      c.z.h.HikariDataSource                   : HikariPool-3 - Shutdown completed.
+2025-11-26T22:20:04.498-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Starting PlenariodigitalApplication using Java 21.0.4 with PID 2272 (C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital\target\classes started by SOUSA in C:\Users\SOUSA\OneDrive\Área de Trabalho\DAW1_Plenario-Digital\plenariodigital)
+2025-11-26T22:20:04.514-03:00 DEBUG
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-26T22:20:04.515-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-11-26T22:20:05.035-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-26T22:20:05.053-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interface.
+2025-11-26T22:20:05.229-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+2025-11-26T22:20:05.232-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardService                  : Starting service [Tomcat]
+2025-11-26T22:20:05.233-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2025-11-26T22:20:05.316-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2025-11-26T22:20:05.317-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2025-11-26T22:20:05.402-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-4 - Starting...
+2025-11-26T22:20:05.497-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.p.HikariPool                       : HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@52a8eb2e
+2025-11-26T22:20:05.498-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.z.h.HikariDataSource                   : HikariPool-4 - Start completed.
+2025-11-26T22:20:05.515-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.FlywayExecutor                     : Database: jdbc:postgresql://localhost:5432/db_plenariodigital (PostgreSQL 18.0)
+2025-11-26T22:20:05.534-03:00  WARN
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.d.b.Database                     : Flyway upgrade recommended: PostgreSQL 18.0 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 17.
+2025-11-26T22:20:05.560-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbValidate                     : Successfully validated 1 migration (execution time 00:00.017s)
+2025-11-26T22:20:05.634-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Current version of schema "public": 01
+2025-11-26T22:20:05.635-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.f.c.i.c.DbMigrate                      : Schema "public" is up to date. No migration necessary.
+2025-11-26T22:20:05.672-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-26T22:20:05.846-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-26T22:20:05.960-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-11-26T22:20:06.152-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-11-26T22:20:06.155-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint beneath base path '/actuator'
+2025-11-26T22:20:06.187-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+2025-11-26T22:20:06.192-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      c.p.PlenariodigitalApplication           : Started PlenariodigitalApplication in 1.866 seconds (process running for 2002.116)
+2025-11-26T22:20:06.194-03:00  INFO
+      2272 --- [controlevacinacao] [{sys:APPLICATION_GROUP:-}] [restartedMain]
+      .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
