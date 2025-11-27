@@ -10,17 +10,25 @@
 <body>
   <!-- Conteúdo Principal do cadastro de partidos -->
   <main layout:fragment="conteudo" th:fragment="formulario" id="main">
-    <section class="container mx-auto px-4">
-      <h1>Cadastrar partido</h1>
 
-      <form th:hx-post="@{/partido/cadastro_partido}" th:object="${partido}">
-        <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Nome', 'nome')}"></div>
-        <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Sigla', 'sigla')}"></div>
-        <div>
-          <button type="submit "> Cadastrar</button>
+    <div class="bg-[#EAEAEA] h-screen">
+      <section class="container mx-auto my-auto pt-30 px-4 grid grid-cols-2 font-['Poppins',sans-serif]">
+        <div class="flex items-center">
+          <h1 class="text-8xl uppercase font-bold text-[#1C1C1C] ">Cadastrar partido</h1>
         </div>
-      </form>
-    </section>
+
+
+        <div class="bg-[#FBF7F7] px-10 py-15 rounded-xl shadow-xl/30">
+          <form th:hx-post="@{/partido/cadastro_partido}" th:object="${partido}">
+            <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Nome', 'nome')}"></div>
+            <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Sigla', 'sigla')}"></div>
+            <div class="mt-6">
+              <button type="submit" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#7B1832] text-[#FBF7F7] hover:bg-[#A54B64] focus:outline-none focus:bg-[#A54B64] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"> Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
   </main>
 </body>
 
