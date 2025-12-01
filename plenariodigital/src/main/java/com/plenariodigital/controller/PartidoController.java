@@ -1,17 +1,13 @@
 package com.plenariodigital.controller;
 
-import java.lang.ProcessBuilder.Redirect;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import com.plenariodigital.model.Partido;
-import com.plenariodigital.repository.partido.PartidoRepository;
 import com.plenariodigital.service.PartidoService;
 
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;

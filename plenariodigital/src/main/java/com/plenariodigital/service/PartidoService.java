@@ -7,6 +7,8 @@ import com.plenariodigital.repository.partido.PartidoRepository;
 
 import jakarta.transaction.Transactional;
 
+import java.util.List;
+
 @Service
 public class PartidoService {
   private final PartidoRepository repositorio;
@@ -18,5 +20,10 @@ public class PartidoService {
   @Transactional
   public void salvar(Partido partido) {
     this.repositorio.save(partido);
+  }
+
+  @Transactional
+  public List<Partido> BuscaPartidos() {
+    return this.repositorio.findAll();
   }
 }

@@ -17,6 +17,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "politico", schema = "camaralegislativa")
@@ -30,9 +31,9 @@ public class Politico implements Serializable {
   @NotBlank(message = "O nome do politico é obrigatório")
   @Column(name = "nome", length = 100, nullable = false)
   private String nome;
-  @NotBlank(message = "O endereço do politico é obrigatório")
-  @Column(name = "endereco", length = 200, nullable = false)
-  private String endereco;
+  @NotBlank(message = "O e-mail do politico é obrigatório")
+  @Column(name = "email", length = 200, nullable = false)
+  private String email;
   @NotBlank(message = "O cpf do politico é obrigatório")
   @Column(name = "cpf", length = 14, unique = true, nullable = false)
   private String cpf;
@@ -40,13 +41,14 @@ public class Politico implements Serializable {
   // === RELACIONAMENTOS ==
 
   // Relacionamento com partido
+  @NotNull(message = "O partido é obrigatorio")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "id_fkpartido", nullable = false)
   private Partido partido;
 
   // Relacionamento com usuario
   @OneToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "id_fkusuario", unique = true, nullable = false)
+  @JoinColumn(name = "id_fkusuario", unique = true, nullable = true)
   private Usuario usuario;
 
   @OneToMany(mappedBy = "politico", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -60,8 +62,8 @@ public class Politico implements Serializable {
     return nome;
   }
 
-  public String getEndereco() {
-    return endereco;
+  public String getEmail() {
+    return email;
   }
 
   public String getCpf() {
@@ -84,8 +86,8 @@ public class Politico implements Serializable {
     this.nome = nome;
   }
 
-  public void setEndereco(String endereco) {
-    this.endereco = endereco;
+  public void setEmail(String email) {
+    this.email = email;
   }
 
   public void setCpf(String cpf) {
@@ -102,7 +104,7 @@ public class Politico implements Serializable {
 
   @Override
   public String toString() {
-    return "Politico [id=" + id + ", nome=" + nome + ", endereco=" + endereco + ", cpf=" + cpf + "]";
+    return "Politico [id=" + id + ", nome=" + nome + ", endereco=" + email + ", cpf=" + cpf + "]";
   }
 
   @Override

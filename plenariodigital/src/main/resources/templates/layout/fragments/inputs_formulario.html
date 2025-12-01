@@ -16,3 +16,20 @@
     <span th:if="${#fields.hasErrors('__${atributo}__')}" th:each="erro : ${#fields.errors('__${atributo}__')}" th:text="${erro} + '. '" class="text-sm text-red-600 mt-2"></span>
   </div>
 </div>
+
+<div th:fragment="input_select (texto, atributo, lista, campoExibicao)" xmlns:th="http://www.thymeleaf.org">
+  <label th:for="${atributo}" th:text="${texto}" class="block font-medium mb-2 mt-6">default</label>
+
+  <div class="relative">
+    <select th:field="*{__${atributo}__}" class="border-2 block w-full px-4 py-3 text-[#666666] disabled:opacity-50 disabled:pointer-events-none" th:classappend="${#fields.hasErrors('__${atributo}__') ? ' border-red-300 rounded-lg focus:border-red-500 focus:ring-red-500' : ' border-gray-300 rounded-lg focus:border-gray-500 focus:ring-gray-500'}">
+
+      <option value="" selected>Selecione uma opção</option>
+
+      <option th:each="item : ${lista}" th:value="${item.id}" th:text="${item[campoExibicao]}"></option>
+    </select>
+  </div>
+
+  <div class="h-6">
+    <span th:if="${#fields.hasErrors('__${atributo}__')}" th:each="erro : ${#fields.errors('__${atributo}__')}" th:text="${erro} + '. '" class="text-sm text-red-600 mt-2"></span>
+  </div>
+</div>
