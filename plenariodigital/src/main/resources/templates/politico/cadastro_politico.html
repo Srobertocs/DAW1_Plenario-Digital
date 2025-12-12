@@ -9,30 +9,28 @@
 
 <body>
   <main layout:fragment="conteudo" th:fragment="formulario" id="main">
-    <div class="bg-[#EAEAEA] h-screen">
-      <section class="container mx-auto my-auto pt-30 px-4 grid grid-cols-2 font-['Poppins',sans-serif]">
-        <div class="flex items-center">
-          <h1 class="text-8xl uppercase font-bold text-[#1C1C1C]">Cadastrar Politico</h1>
-        </div>
 
-        <div class="bg-[#FBF7F7] px-10 py-15 rounded-xl shadow-xl/30">
-          <form th:hx-post="@{/politico/cadastro_politico}" th:object="${politico}">
-            <div th:replace="~{layout/fragments/inputs_formulario :: input_texto('Nome', 'nome')}"></div>
+    <section class="container mx-auto my-auto py-30 px-4 grid grid-cols-2 font-['Poppins',sans-serif]">
+      <div class="flex items-center">
+        <h1 class="text-8xl uppercase font-bold text-[#1C1C1C]">Cadastrar Vereador</h1>
+      </div>
 
-            <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('E-mail', 'email')}"></div>
+      <div class="bg-[#FBF7F7] px-10 py-15 rounded-xl shadow-xl/30">
+        <form th:hx-post="@{/politico/cadastro_politico}" th:object="${politico}">
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_texto('Digite o nome do vereador' ,'Nome do Vereador', 'nome')}"></div>
 
-            <div th:replace="~{layout/fragments/inputs_formulario ::
-            input_texto ('CPF','cpf')}"></div>
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Exemplo: vereador@gmail.com', 'E-mail', 'email')}"></div>
 
-            <div th:replace="~{layout/fragments/inputs_formulario :: input_select ('Associação partidaria', 'partido', ${partidos}, 'nome')}"></div>
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_texto ('Exemplo: 123.456.789-10', 'CPF','cpf')}"></div>
 
-            <div class="mt-6">
-              <button type="submit" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#7B1832] text-[#FBF7F7] hover:bg-[#A54B64] focus:outline-none focus:bg-[#A54B64] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"> Cadastrar</button>
-            </div>
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_select ('Associação partidaria', 'partido', ${partidos}, 'nome')}"></div>
 
-          </form>
-        </div>
-      </section>
-    </div>
+          <div class="mt-6">
+            <button type="submit" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#7B1832] text-[#FBF7F7] hover:bg-[#A54B64] focus:outline-none focus:bg-[#A54B64] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"> Cadastrar</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
   </main>
 </body>

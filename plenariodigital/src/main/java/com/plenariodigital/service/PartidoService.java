@@ -2,10 +2,8 @@ package com.plenariodigital.service;
 
 import org.springframework.stereotype.Service;
 import com.plenariodigital.model.Partido;
-
-import com.plenariodigital.repository.partido.PartidoRepository;
-
 import jakarta.transaction.Transactional;
+import com.plenariodigital.repository.partido.PartidoRepository;
 
 import java.util.List;
 

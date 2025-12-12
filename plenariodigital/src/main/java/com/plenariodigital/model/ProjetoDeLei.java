@@ -1,10 +1,12 @@
 package com.plenariodigital.model;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import com.plenariodigital.model.enums.resultadoVotacao;
 
+import jakarta.validation.constraints.NotNull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -27,16 +29,28 @@ public class ProjetoDeLei implements Serializable {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "id_projetodelei")
   private Integer id;
+
   @NotBlank(message = "O título do projeto de lei é obrigatório")
   @Column(name = "titulo", length = 200, nullable = false)
   private String titulo;
+
   @Column(name = "votos_favoraveis", nullable = false)
   private int votosFavoraveis;
+
   @Column(name = "votos_contrarios", nullable = false)
   private int votosContrarios;
+
   @Enumerated(EnumType.STRING)
   @Column(name = "resultado", length = 50, nullable = false)
   private resultadoVotacao resultado;
+
+  @NotBlank(message = "O projeto de lei precisar ter um resumo de detalhamento")
+  @Column(name = "resumo_lei", length = 500, nullable = false)
+  private String resumoLei;
+
+  @NotNull(message = "Coloque uma data válida para a votação")
+  @Column(name = "data_votacao", nullable = false)
+  private LocalDate data;
 
   // === RELACIONAMENTO ===
   @ManyToOne(fetch = FetchType.LAZY)
@@ -49,6 +63,14 @@ public class ProjetoDeLei implements Serializable {
 
   public String getTitulo() {
     return titulo;
+  }
+
+  public String getResumoLei() {
+    return resumoLei;
+  }
+
+  public LocalDate getData() {
+    return data;
   }
 
   public int getVotosFavoraveis() {
@@ -89,6 +111,14 @@ public class ProjetoDeLei implements Serializable {
 
   public void setPolitico(Politico politico) {
     this.politico = politico;
+  }
+
+  public void setResumoLei(String resumoLei) {
+    this.resumoLei = resumoLei;
+  }
+
+  public void setData(LocalDate data) {
+    this.data = data;
   }
 
   @Override

@@ -16,13 +16,16 @@
   <script defer src="../../static/js/vendors/htmx/htmx.min.js" th:src="@{/js/vendors/htmx/htmx.min.js}"></script>
   <script defer src="../../static/js/vendors/htmx/htmx-ext-response-targets.min.js" th:src="@{/js/vendors/htmx/htmx-ext-response-targets.min.js}"></script>
   <meta name="htmx-config" content='{"defaultSwapStyle":"outerHTML"}'>
+
 </head>
 
 <body hx-ext="response-targets" hx-target="#main" hx-target-5*="#main" hx-target-4*="#main">
 
-  <section>
+  <section class="bg-[#EAEAEA]">
     <!-- Header -->
+
     <header th:replace="~{layout/fragments/header.html :: header}"></header>
+
 
     <main>
       <th:block layout:fragment="conteudo"></th:block>

@@ -1,12 +1,12 @@
 package com.plenariodigital.service;
 
 import com.plenariodigital.repository.politico.PoliticoRepository;
-
+import com.plenariodigital.model.Politico;
 import org.springframework.stereotype.Service;
 
-import com.plenariodigital.model.Politico;
-
 import jakarta.transaction.Transactional;
+
+import java.util.List;
 
 @Service
 public class PoliticoService {
@@ -19,5 +19,10 @@ public class PoliticoService {
   @Transactional
   public void salvar(Politico politico) {
     this.repositorio.save(politico);
+  }
+
+  @Transactional
+  public List<Politico> buscaPoliticos() {
+    return this.repositorio.findAll();
   }
 }

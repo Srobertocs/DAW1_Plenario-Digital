@@ -1,4 +1,4 @@
-<section th:fragment="conteudo_administrador" xmlns:th="http://www.thymeleaf.org" class="bg-[#EAEAEA]">
+<section th:fragment="conteudo_administrador" xmlns:th="http://www.thymeleaf.org">
   <section class="container mx-auto py-22.5 px-4 font-['Poppins',sans-serif]">
     <h1 class="text-5xl font-semibold text-[#1C1C1C] text-center">Painel Câmara Legislativa</h1>
 
@@ -18,7 +18,7 @@
       </div>
 
       <div class="flex justify-center">
-        <a href="" class="bg-[#FBF7F7] px-10 py-15 flex flex-col gap-10 items-center rounded-xl w-[400px] transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl/30 cursor-pointer">
+        <a th:hx-get="@{/projeto/cadastro_projeto}" class="bg-[#FBF7F7] px-10 py-15 flex flex-col gap-10 items-center rounded-xl w-[400px] transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl/30 cursor-pointer">
           <p class="text-xl uppercase font-semibold text-[#1C1C1C]">Cadastrar Projeto de Lei</p>
           <svg class="h-auto w-20 fill-[#1C1C1C]" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
 

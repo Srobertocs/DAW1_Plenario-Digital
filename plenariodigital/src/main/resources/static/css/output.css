@@ -302,9 +302,6 @@
   .h-auto {
     height: auto;
   }
-  .h-screen {
-    height: 100vh;
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -397,6 +394,9 @@
   .bg-\[\#EAEAEA\] {
     background-color: #EAEAEA;
   }
+  .bg-\[\#EAEAEA\]\/75 {
+    background-color: color-mix(in oklab, #EAEAEA 75%, transparent);
+  }
   .bg-\[\#FBF7F7\] {
     background-color: #FBF7F7;
   }
@@ -424,6 +424,12 @@
   .py-22\.5 {
     padding-block: calc(var(--spacing) * 22.5);
   }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
+  }
+  .py-55 {
+    padding-block: calc(var(--spacing) * 55);
+  }
   .pe-3 {
     padding-inline-end: calc(var(--spacing) * 3);
   }
@@ -432,9 +438,6 @@
   }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
-  }
-  .pt-30 {
-    padding-top: calc(var(--spacing) * 30);
   }
   .text-center {
     text-align: center;

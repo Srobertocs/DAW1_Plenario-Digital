@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" layout:decorate="~{layout/layoutpadrao}" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Projeto de Lei</title>
+</head>
+
+<body>
+  <main layout:fragment="conteudo" th:fragment="formulario" id="main">
+
+    <section class="container mx-auto my-auto py-55 px-4 grid grid-cols-2 font-['Poppins',sans-serif]">
+      <div class="flex items-center">
+        <h1 class="text-8xl uppercase font-bold text-[#1C1C1C] ">Cadastrar Projeto de Lei</h1>
+      </div>
+
+
+      <div class="bg-[#FBF7F7] px-10 py-15 rounded-xl shadow-xl/30">
+        <form th:hx-post="@{/projeto/cadastro_projeto}" th:object="${projetoDeLei}">
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_texto('Digite o título do projeto de lei','Projeto de lei', 'titulo')}"></div>
+
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_select('Vereador autor', 'politico', ${politicos}, nome)}"></div>
+
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_textArea('Digite um resumo para o projeto', 'Descrição', 'resumoLei')}"></div>
+
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_resultado('Status do projeto', resultado, ${statusVotacao})}"></div>
+
+          <div th:replace="~{layout/fragments/inputs_formulario :: input_data('Data da votação', 'data')}"></div>
+
+          <div class="mt-6">
+            <button type="submit" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#7B1832] text-[#FBF7F7] hover:bg-[#A54B64] focus:outline-none focus:bg-[#A54B64] disabled:opacity-50 disabled:pointer-events-none cursor-pointer"> Cadastrar</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

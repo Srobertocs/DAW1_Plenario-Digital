@@ -21,7 +21,6 @@ import org.springframework.validation.ObjectError;
 
 import java.util.List;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
 public class PoliticoController {
@@ -30,8 +29,8 @@ public class PoliticoController {
   private final PartidoService partidoServico;
   private final PoliticoService politicoServico;
 
-  public PoliticoController(PartidoService partidoService, PoliticoService politicoServico) {
-    this.partidoServico = partidoService;
+  public PoliticoController(PartidoService partidoServico, PoliticoService politicoServico) {
+    this.partidoServico = partidoServico;
     this.politicoServico = politicoServico;
   }
 
@@ -39,8 +38,8 @@ public class PoliticoController {
   public String abrirCadastro(Politico politico, Model model,
       @RequestHeader(value = "HX-Request", required = false) String hxRequestHeader) {
 
-      List<Partido> partidos = partidoServico.BuscaPartidos();
-      model.addAttribute("partidos", partidos);
+    List<Partido> partidos = partidoServico.BuscaPartidos();
+    model.addAttribute("partidos", partidos);
 
     if (hxRequestHeader != null) {
       return "politico/cadastro_politico :: formulario";
@@ -50,7 +49,8 @@ public class PoliticoController {
   }
 
   @PostMapping("/politico/cadastro_politico")
-  public String cadastrarPolitico(@Valid Politico politico, BindingResult resultado, RedirectAttributes atributos, Model model,
+  public String cadastrarPolitico(@Valid Politico politico, BindingResult resultado, RedirectAttributes atributos,
+      Model model,
       @RequestHeader(value = "HX-Request", required = false) String hxRequestHeader) {
 
     if (resultado.hasErrors()) {
@@ -59,7 +59,7 @@ public class PoliticoController {
 
       List<Partido> partidos = partidoServico.BuscaPartidos();
       model.addAttribute("partidos", partidos);
-      
+
       for (FieldError erro : resultado.getFieldErrors()) {
         logger.info("Erro de campo: {}", erro);
       }
