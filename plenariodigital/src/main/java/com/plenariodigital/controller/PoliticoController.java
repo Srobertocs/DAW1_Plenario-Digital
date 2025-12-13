@@ -38,8 +38,7 @@ public class PoliticoController {
   public String abrirCadastro(Politico politico, Model model,
       @RequestHeader(value = "HX-Request", required = false) String hxRequestHeader) {
 
-    List<Partido> partidos = partidoServico.BuscaPartidos();
-    model.addAttribute("partidos", partidos);
+    carregarInformacaoFormulario(model);
 
     if (hxRequestHeader != null) {
       return "politico/cadastro_politico :: formulario";
@@ -57,8 +56,7 @@ public class PoliticoController {
       logger.info("O politico é inválido para cadastro");
       logger.info("Erros encontrados:");
 
-      List<Partido> partidos = partidoServico.BuscaPartidos();
-      model.addAttribute("partidos", partidos);
+      carregarInformacaoFormulario(model);
 
       for (FieldError erro : resultado.getFieldErrors()) {
         logger.info("Erro de campo: {}", erro);
@@ -71,7 +69,7 @@ public class PoliticoController {
       if (hxRequestHeader != null) {
         return "politico/cadastro_politico :: formulario";
       } else {
-        return "palitico/cadastro_politico";
+        return "politico/cadastro_politico";
       }
 
     } else {
@@ -82,5 +80,10 @@ public class PoliticoController {
       return "redirect:/politico/cadastro_politico";
     }
 
+  }
+
+  private void carregarInformacaoFormulario(Model model) {
+    List<Partido> partidos = partidoServico.BuscaPartidos();
+    model.addAttribute("partidos", partidos);
   }
 }

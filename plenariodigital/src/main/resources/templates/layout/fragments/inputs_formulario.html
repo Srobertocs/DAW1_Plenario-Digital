@@ -58,19 +58,11 @@
 </div>
 
 
-<div th:fragment="input_data (texto, atributo)" xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="input_data (texto, atributo, dataAtual)" xmlns:th="http://www.thymeleaf.org">
 
   <label th:for="${atributo}" th:text="${texto}" class="block font-medium mb-2 mt-6">default</label>
   <div class="relative">
-    <input type="date" id="data_futura" th:field="*{__${atributo}__}" class="border-2 block w-full px-4 py-3 text-[#666666] disabled:opacity-50 disabled:pointer-events-none" th:classappend="${#fields.hasErrors('__${atributo}__') ? ' border-red-300 rounded-lg focus:border-red-500 focus:ring-red-500' : ' border-gray-300 rounded-lg focus:border-gray-500 focus:ring-gray-500'}">
-
-    <div th:if="${#fields.hasErrors('__${atributo}__')}" class="absolute inset-y-0 right-0 flex items-center pe-3 pointer-events-none">
-      <svg class="shrink-0 size-4 text-red-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="10"></circle>
-        <line x1="12" x2="12" y1="8" y2="12"></line>
-        <line x1="12" x2="12.01" y1="16" y2="16"></line>
-      </svg>
-    </div>
+    <input type="date" th:min="${dataAtual}" id="data_futura" th:field="*{__${atributo}__}" class="border-2 block w-full px-4 py-3 text-[#666666] disabled:opacity-50 disabled:pointer-events-none" th:classappend="${#fields.hasErrors('__${atributo}__') ? ' border-red-300 rounded-lg focus:border-red-500 focus:ring-red-500' : ' border-gray-300 rounded-lg focus:border-gray-500 focus:ring-gray-500'}">
   </div>
   <div class="h-6">
     <span th:if="${#fields.hasErrors('__${atributo}__')}" th:each="erro : ${#fields.errors('__${atributo}__')}" th:text="${erro} + '. '" class="text-sm text-red-600 mt-2"></span>

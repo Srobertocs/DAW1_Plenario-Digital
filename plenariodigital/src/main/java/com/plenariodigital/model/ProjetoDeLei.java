@@ -40,6 +40,7 @@ public class ProjetoDeLei implements Serializable {
   @Column(name = "votos_contrarios", nullable = false)
   private int votosContrarios;
 
+  @NotNull(message = "Coloque o status que se encontra o projeto de lei")
   @Enumerated(EnumType.STRING)
   @Column(name = "resultado", length = 50, nullable = false)
   private resultadoVotacao resultado;
@@ -48,11 +49,12 @@ public class ProjetoDeLei implements Serializable {
   @Column(name = "resumo_lei", length = 500, nullable = false)
   private String resumoLei;
 
-  @NotNull(message = "Coloque uma data válida para a votação")
+  @NotNull(message = "Coloque uma data para a votação do projeto")
   @Column(name = "data_votacao", nullable = false)
   private LocalDate data;
 
   // === RELACIONAMENTO ===
+  @NotNull(message = "Um vereador autor precisa ser selecionado")
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "id_fkpolitico", nullable = false)
   private Politico politico;
