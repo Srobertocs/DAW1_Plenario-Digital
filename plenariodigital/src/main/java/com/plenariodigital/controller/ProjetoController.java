@@ -15,6 +15,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -23,6 +24,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.time.LocalDate;
 import java.util.List;
 import com.plenariodigital.model.Politico;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class ProjetoController {
@@ -83,10 +85,20 @@ public class ProjetoController {
     }
   }
 
+  @GetMapping("/projetos/excluir/{id}")
+  public String excluirProjeto(@PathVariable Integer id, Model model,
+      @RequestHeader(value = "HX-Request", required = false) String hxRequestHeader) {
+
+    projetoServico.ExcluirProjeto(id);
+
+    return "layout/fragments/tabela_projetos :: conteudo_tabela_projeto";
+  }
+
   public void carregarInformacoesFormulario(Model model) {
     model.addAttribute("statusVotacao", resultadoVotacao.values());
     List<Politico> politicos = politicoServico.buscaPoliticos();
     model.addAttribute("politicos", politicos);
     model.addAttribute("dataAtual", LocalDate.now());
   }
+
 }

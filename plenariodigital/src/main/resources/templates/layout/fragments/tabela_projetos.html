@@ -1,0 +1,66 @@
+<article id="tabela-projetos" th:fragment="conteudo_tabela_projeto" xmlns:th="http://www.thymeleaf.org">
+
+  <section class="container mx-auto py-22.5 px-4 ">
+    <div class="bg-white shadow-md rounded-lg overflow-hidden overflow-x-auto">
+      <table class="min-w-full leading-normal font-['Poppins',sans-serif]">
+        <thead class="text-sm">
+          <tr>
+            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+              Ementa
+            </th>
+            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+              Autor
+            </th>
+            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+              Favoráveis
+            </th>
+            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+              Contrários
+            </th>
+            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+              Status
+            </th>
+            <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left font-semibold text-gray-600 uppercase tracking-wider">
+              Ações
+            </th>
+
+          </tr>
+        </thead>
+        <tbody class="text-sm">
+          <tr th:each="projeto : ${projetos}">
+            <td class="px-5 py-5 border-b border-gray-200 bg-white" th:text="${projeto.titulo}"></td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white" th:text="${projeto.politico?.nome} ?: 'N/A'"></td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-center font-medium text-green-600" th:text="${projeto.votosFavoraveis}"></td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-center font-medium text-red-600" th:text="${projeto.votosContrarios}"></td>
+            <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+              <span class="px-4 py-2 inline-flex leading-5 font-semibold rounded-full bg-green-100 text-green-800" th:classappend="${projeto.resultado.name() == 'APROVADO' ? 'bg-green-200 text-green-900' : 
+              (projeto.resultado.name() == 'NEGADO' ? 'bg-red-200 text-red-900' : 
+              'bg-yellow-200 text-yellow-900')}">
+                <span class="relative" th:text="${projeto.resultado.getDescricao()}"></span>
+              </span>
+            </td>
+
+            <td class="font-semibold uppercase px-5 py-5 border-b border-gray-200 bg-white">
+
+              <div class="flex gap-2">
+                <a th:hx-get="@{/projetos/editar/{id}(id=${projeto.id})}" class="text-blue-600 hover:text-blue-900 cursor-pointer">
+                  Editar
+                </a>
+
+                <a th:hx-get="@{/projetos/excluir/{id}(id=${projeto.id})}" hx-target="#tabela-projetos" class="text-[#7B1832] hover:text-[#A54B64] ml-4 cursor-pointer" onclick="return confirm('Tem certeza que deseja excluir este projeto?');">
+                  Excluir
+                </a>
+              </div>
+            </td>
+          </tr>
+
+          <tr th:if="${#lists.isEmpty(projetos)}">
+            <td colspan="6" class="px-5 py-5 border-b border-gray-200 bg-white text-sm text-center text-gray-500">
+              Nenhum projeto de lei cadastrado no momento.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</article>

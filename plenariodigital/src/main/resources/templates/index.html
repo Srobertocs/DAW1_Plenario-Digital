@@ -16,7 +16,7 @@
         <div class="font-['Poppins',sans-serif]">
           <h1 class="text-6xl font-semibold text-[#1C1C1C]">Portal Câmara: Transparência em Uberaba</h1>
 
-          <p class="pt-5 text-[#666666]">A maneira mais rápida e clara de acompanhar a votação e o resultado de todos os Projetos de Lei (PLs) dos vereadores de Uberaba. Acesse o Portal Oficial e confira!</p>
+          <p class="pt-5 text-[#666666] text-lg">A maneira mais rápida e clara de acompanhar a votação e o resultado de todos os Projetos de Lei (PLs) dos vereadores de Uberaba. Acesse o Portal Oficial e confira!</p>
         </div>
 
         <div>
@@ -26,7 +26,11 @@
     </div>
 
     <!-- Conteúdo Principal -->
-    <section th:replace="~{layout/fragments/conteudo_administrador.html :: conteudo_administrador}"></section>
+    <article th:replace="~{layout/fragments/conteudo_administrador.html :: conteudo_administrador}"></article>
+
+
+    <!-- Tabela de visualizão dos projetos de lei -->
+    <article th:replace="~{layout/fragments/tabela_projetos.html :: conteudo_tabela_projeto}"></article>
   </main>
 </body>
 
